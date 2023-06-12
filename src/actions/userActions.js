@@ -30,8 +30,23 @@ export const fetchUsers = () => {
     axios
       .get('https://jsonplaceholder.typicode.com/users')
       .then(response => {
-        const users = response.data;
+        const users = response.data.map(user => ({
+          ...user,
+          gender: Math.random() < 0.5 ? 'Male' : 'Female',
+        })).sort((a, b) => {
+          const nameA = a.name.toLowerCase();
+          const nameB = b.name.toLowerCase();
+      
+          if (nameA < nameB) {
+            return -1;
+          }
+          if (nameA > nameB) {
+            return 1;
+          }
+          return 0;
+        });;
         dispatch(fetchUsersSuccess(users));
+        console.log(users)
       })
       .catch(error => {
         const errorMessage = error.message;
