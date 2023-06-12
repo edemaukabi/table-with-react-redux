@@ -33,14 +33,14 @@ export const fetchUsers = () => {
         const users = response.data.map(user => ({
           ...user,
           gender: Math.random() < 0.5 ? 'Male' : 'Female',
-        })).sort((a, b) => {
-          const nameA = a.name.toLowerCase();
-          const nameB = b.name.toLowerCase();
+        })).sort((current, next) => {
+          const currentUser = current.name.toLowerCase();
+          const nextUser = next.name.toLowerCase();
       
-          if (nameA < nameB) {
+          if (currentUser < nextUser) {
             return -1;
           }
-          if (nameA > nameB) {
+          if (currentUser > nextUser) {
             return 1;
           }
           return 0;
