@@ -9,9 +9,6 @@ Steps to run and test the app:
     To run the test, in your terminal, run <npm run test>.
     The tests contains basic tests to mock some features of how the components, store and reducer function ought to work. It is unit tests. There is also a possibility for me to write end to end integration tests for it. But I just did the unit tests for now.
 
-
-Task: Create a web application that fetches data from an API and displays it in a table. The application should also allow the user to search and filter the data.
-
 What I did in addition to the starter code:
 
     I had to write the reducer function as there was none originally.
@@ -22,6 +19,16 @@ What I did in addition to the starter code:
     I tested manually for the requirements in the README.md file to ensure it worked.
     I wrote unit tests to mock the actions of the Component, reducers etc.
     If there are other edge cases I didn't capture, I am open to fixing as well. Thank you
+    I hosted the project on vercel. You can find it here https://table-with-react-redux.vercel.app/
+
+Live Link for testing
+https://table-with-react-redux.vercel.app/
+
+Project Screen Shot(s)
+![Screenshot of project large](assets/table-react.png)
+![screenshot small](assets/table-react-small.png)
+
+Task: Create a web application that fetches data from an API and displays it in a table. The application should also allow the user to search and filter the data.
 
 Requirements:
 

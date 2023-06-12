@@ -15,7 +15,7 @@ function App() {
   const [searchTerm, setSearchTerm] = useState("");
   const [genderFilter, setGenderFilter] = useState("all");
   const [currentPage, setCurrentPage] = useState(1);
-  const [usersPerPage] = useState(10);
+  const [usersPerPage] = useState(5);
 
   const handleChangeSearchTerm = (e) => {
     setSearchTerm(e.target.value);
