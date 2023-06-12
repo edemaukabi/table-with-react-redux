@@ -25,8 +25,8 @@ Live Link for testing
 https://table-with-react-redux.vercel.app/
 
 Project Screen Shot(s)
-![Screenshot of project large](assets/table-react.png)
-![screenshot small](assets/table-react-small.png)
+![Screenshot of project large](src/assets/table-react.png)
+![screenshot small](src/assets/table-react-small.png)
 
 Task: Create a web application that fetches data from an API and displays it in a table. The application should also allow the user to search and filter the data.
 
