@@ -107,7 +107,7 @@ function App() {
 
   return (
     <div className="App">
-      <h2 className="page_title">Frontend Coding Assessment</h2>
+      <h2 className="page_title">Responsive Table with Search and Pagination Feature</h2>
       <div className="search-container">
         <input
           type="text"
